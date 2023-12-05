@@ -1,0 +1,84 @@
+0 verbose cli /usr/local/bin/node /usr/local/bin/npm
+1 info using npm@10.2.4
+2 info using node@v20.9.0
+3 timing npm:load:whichnode Completed in 1ms
+4 timing config:load:defaults Completed in 1ms
+5 timing config:load:file:/usr/local/lib/node_modules/npm/npmrc Completed in 1ms
+6 timing config:load:builtin Completed in 1ms
+7 timing config:load:cli Completed in 2ms
+8 timing config:load:env Completed in 1ms
+9 timing config:load:file:/Users/macbookpro/Library/Caches/typescript/4.8/.npmrc Completed in 0ms
+10 timing config:load:project Completed in 1ms
+11 timing config:load:file:/Users/macbookpro/.npmrc Completed in 0ms
+12 timing config:load:user Completed in 0ms
+13 timing config:load:file:/usr/local/etc/npmrc Completed in 1ms
+14 timing config:load:global Completed in 1ms
+15 timing config:load:setEnvs Completed in 1ms
+16 timing config:load Completed in 8ms
+17 timing npm:load:configload Completed in 8ms
+18 timing config:load:flatten Completed in 2ms
+19 timing npm:load:mkdirpcache Completed in 9ms
+20 timing npm:load:mkdirplogs Completed in 0ms
+21 verbose title npm install @types/express@ts4.8 @types/jsonwebtoken@ts4.8 @types/qrcode@ts4.8 @types/react@ts4.8 @types/react-dom@ts4.8 @types/react-modal@ts4.8 @types/react-slick@ts4.8 @types/slick-carousel@ts4.8 @types/eslint@ts4.8
+22 verbose argv "install" "--ignore-scripts" "@types/express@ts4.8" "@types/jsonwebtoken@ts4.8" "@types/qrcode@ts4.8" "@types/react@ts4.8" "@types/react-dom@ts4.8" "@types/react-modal@ts4.8" "@types/react-slick@ts4.8" "@types/slick-carousel@ts4.8" "@types/eslint@ts4.8" "--save-dev" "--user-agent" "typesInstaller/4.8.2"
+23 timing npm:load:setTitle Completed in 20ms
+24 timing npm:load:display Completed in 1ms
+25 verbose logfile logs-max:10 dir:/Users/macbookpro/Downloads/inventory-project-main/Frontend/.npm-cache/_logs/2023-12-05T00_26_04_924Z-
+26 verbose logfile /Users/macbookpro/Downloads/inventory-project-main/Frontend/.npm-cache/_logs/2023-12-05T00_26_04_924Z-debug-0.log
+27 timing npm:load:logFile Completed in 8ms
+28 timing npm:load:timers Completed in 0ms
+29 timing npm:load:configScope Completed in 0ms
+30 timing npm:load Completed in 65ms
+31 timing arborist:ctor Completed in 1ms
+32 silly logfile done cleaning log files
+33 timing idealTree:init Completed in 51ms
+34 timing arborist:ctor Completed in 0ms
+35 http fetch GET 200 https://registry.npmjs.org/@types%2fexpress 402ms (cache miss)
+36 http fetch GET 200 https://registry.npmjs.org/@types%2freact-modal 684ms (cache miss)
+37 http fetch GET 200 https://registry.npmjs.org/@types%2freact-slick 1343ms (cache miss)
+38 timing idealTree Completed in 1398ms
+39 timing command:install Completed in 1409ms
+40 verbose type system
+41 verbose stack FetchError: Invalid response body while trying to fetch https://registry.npmjs.org/@types%2freact-slick: EACCES: permission denied, mkdir '/Users/macbookpro/Downloads/inventory-project-main/Frontend/.npm-cache/_cacache/index-v5/b9/bb'
+41 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/minipass-fetch/lib/body.js:170:15
+41 verbose stack     at async Response.json (/usr/local/lib/node_modules/npm/node_modules/minipass-fetch/lib/body.js:75:17)
+41 verbose stack     at async RegistryFetcher.packument (/usr/local/lib/node_modules/npm/node_modules/pacote/lib/registry.js:94:25)
+41 verbose stack     at async RegistryFetcher.manifest (/usr/local/lib/node_modules/npm/node_modules/pacote/lib/registry.js:118:23)
+41 verbose stack     at async /usr/local/lib/node_modules/npm/node_modules/@npmcli/arborist/lib/arborist/build-ideal-tree.js:527:22
+41 verbose stack     at async Promise.all (index 6)
+41 verbose stack     at async #add (/usr/local/lib/node_modules/npm/node_modules/@npmcli/arborist/lib/arborist/build-ideal-tree.js:516:5)
+41 verbose stack     at async #applyUserRequestsToNode (/usr/local/lib/node_modules/npm/node_modules/@npmcli/arborist/lib/arborist/build-ideal-tree.js:485:7)
+41 verbose stack     at async #applyUserRequests (/usr/local/lib/node_modules/npm/node_modules/@npmcli/arborist/lib/arborist/build-ideal-tree.js:420:7)
+41 verbose stack     at async Arborist.buildIdealTree (/usr/local/lib/node_modules/npm/node_modules/@npmcli/arborist/lib/arborist/build-ideal-tree.js:195:7)
+42 verbose cwd /Users/macbookpro/Library/Caches/typescript/4.8
+43 verbose Darwin 21.6.0
+44 verbose node v20.9.0
+45 verbose npm  v10.2.4
+46 error code EACCES
+47 error syscall mkdir
+48 error path /Users/macbookpro/Downloads/inventory-project-main/Frontend/.npm-cache/_cacache/index-v5/b9/bb
+49 error errno EACCES
+50 verbose FetchError: Invalid response body while trying to fetch https://registry.npmjs.org/@types%2freact-slick: EACCES: permission denied, mkdir '/Users/macbookpro/Downloads/inventory-project-main/Frontend/.npm-cache/_cacache/index-v5/b9/bb'
+    at /usr/local/lib/node_modules/npm/node_modules/minipass-fetch/lib/body.js:170:15
+    at async Response.json (/usr/local/lib/node_modules/npm/node_modules/minipass-fetch/lib/body.js:75:17)
+    at async RegistryFetcher.packument (/usr/local/lib/node_modules/npm/node_modules/pacote/lib/registry.js:94:25)
+    at async RegistryFetcher.manifest (/usr/local/lib/node_modules/npm/node_modules/pacote/lib/registry.js:118:23)
+    at async /usr/local/lib/node_modules/npm/node_modules/@npmcli/arborist/lib/arborist/build-ideal-tree.js:527:22
+    at async Promise.all (index 6)
+    at async #add (/usr/local/lib/node_modules/npm/node_modules/@npmcli/arborist/lib/arborist/build-ideal-tree.js:516:5)
+    at async #applyUserRequestsToNode (/usr/local/lib/node_modules/npm/node_modules/@npmcli/arborist/lib/arborist/build-ideal-tree.js:485:7)
+    at async #applyUserRequests (/usr/local/lib/node_modules/npm/node_modules/@npmcli/arborist/lib/arborist/build-ideal-tree.js:420:7)
+    at async Arborist.buildIdealTree (/usr/local/lib/node_modules/npm/node_modules/@npmcli/arborist/lib/arborist/build-ideal-tree.js:195:7)
+51 error
+51 error Your cache folder contains root-owned files, due to a bug in
+51 error previous versions of npm which has since been addressed.
+51 error
+51 error To permanently fix this problem, please run:
+51 error   sudo chown -R 501:20 "/Users/macbookpro/Downloads/inventory-project-main/Frontend/.npm-cache"
+52 verbose exit 1
+53 timing npm Completed in 1914ms
+54 verbose unfinished npm timer reify 1701735965428
+55 verbose unfinished npm timer reify:loadTrees 1701735965435
+56 verbose unfinished npm timer idealTree:userRequests 1701735965487
+57 verbose code 1
+58 error A complete log of this run can be found in: /Users/macbookpro/Downloads/inventory-project-main/Frontend/.npm-cache/_logs/2023-12-05T00_26_04_924Z-debug-0.log

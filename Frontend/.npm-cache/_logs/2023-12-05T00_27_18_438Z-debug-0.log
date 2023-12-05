@@ -1,0 +1,155 @@
+0 verbose cli /usr/local/bin/node /usr/local/bin/npm
+1 info using npm@10.2.4
+2 info using node@v20.9.0
+3 timing npm:load:whichnode Completed in 1ms
+4 timing config:load:defaults Completed in 2ms
+5 timing config:load:file:/usr/local/lib/node_modules/npm/npmrc Completed in 0ms
+6 timing config:load:builtin Completed in 0ms
+7 timing config:load:cli Completed in 3ms
+8 timing config:load:env Completed in 0ms
+9 timing config:load:file:/Users/macbookpro/Downloads/inventory-project-main/Frontend/.npmrc Completed in 0ms
+10 timing config:load:project Completed in 1ms
+11 timing config:load:file:/Users/macbookpro/.npmrc Completed in 0ms
+12 timing config:load:user Completed in 0ms
+13 timing config:load:file:/usr/local/etc/npmrc Completed in 3ms
+14 timing config:load:global Completed in 3ms
+15 timing config:load:setEnvs Completed in 1ms
+16 timing config:load Completed in 10ms
+17 timing npm:load:configload Completed in 10ms
+18 timing config:load:flatten Completed in 2ms
+19 timing npm:load:mkdirpcache Completed in 8ms
+20 timing npm:load:mkdirplogs Completed in 4ms
+21 verbose title npm install babel-loader @babel/core @babel/preset-react
+22 verbose argv "install" "--save-dev" "babel-loader" "@babel/core" "@babel/preset-react"
+23 timing npm:load:setTitle Completed in 19ms
+24 timing npm:load:display Completed in 1ms
+25 verbose logfile logs-max:10 dir:/Users/macbookpro/Downloads/inventory-project-main/Frontend/.npm-cache/_logs/2023-12-05T00_27_18_438Z-
+26 verbose logfile /Users/macbookpro/Downloads/inventory-project-main/Frontend/.npm-cache/_logs/2023-12-05T00_27_18_438Z-debug-0.log
+27 timing npm:load:logFile Completed in 8ms
+28 timing npm:load:timers Completed in 0ms
+29 timing npm:load:configScope Completed in 0ms
+30 timing npm:load Completed in 67ms
+31 timing arborist:ctor Completed in 1ms
+32 silly logfile done cleaning log files
+33 timing idealTree:init Completed in 1111ms
+34 timing idealTree:userRequests Completed in 4ms
+35 silly idealTree buildDeps
+36 silly fetch manifest babel-loader@*
+37 timing arborist:ctor Completed in 1ms
+38 http fetch GET 200 https://registry.npmjs.org/babel-loader 901ms (cache miss)
+39 silly fetch manifest @babel/core@*
+40 http fetch GET 200 https://registry.npmjs.org/@babel%2fcore 906ms (cache miss)
+41 silly fetch manifest webpack@>=5
+42 http fetch GET 200 https://registry.npmjs.org/webpack 3156ms (cache miss)
+43 silly fetch manifest @babel/preset-react@*
+44 http fetch GET 200 https://registry.npmjs.org/@babel%2fpreset-react 652ms (cache miss)
+45 silly placeDep ROOT @babel/core@7.23.5 REPLACE for: frontend@0.1.0 want: *
+46 silly placeDep ROOT @babel/preset-react@7.23.3 REPLACE for: frontend@0.1.0 want: *
+47 silly placeDep ROOT babel-loader@9.1.3 REPLACE for: frontend@0.1.0 want: *
+48 silly fetch manifest find-cache-dir@^4.0.0
+49 silly fetch manifest schema-utils@^4.0.0
+50 http fetch GET 200 https://registry.npmjs.org/find-cache-dir 86ms (cache miss)
+51 http fetch GET 200 https://registry.npmjs.org/schema-utils 644ms (cache miss)
+52 timing idealTree:#root Completed in 6333ms
+53 timing idealTree:node_modules/@babel/core Completed in 0ms
+54 timing idealTree:node_modules/@babel/preset-react Completed in 0ms
+55 silly placeDep ROOT find-cache-dir@4.0.0 OK for: babel-loader@9.1.3 want: ^4.0.0
+56 silly fetch manifest pkg-dir@^7.0.0
+57 silly placeDep node_modules/babel-loader schema-utils@ OK for: babel-loader@9.1.3 want: ^4.0.0
+58 http fetch GET 200 https://registry.npmjs.org/pkg-dir 77ms (cache miss)
+59 timing idealTree:node_modules/babel-loader Completed in 80ms
+60 silly placeDep node_modules/find-cache-dir pkg-dir@7.0.0 OK for: find-cache-dir@4.0.0 want: ^7.0.0
+61 silly fetch manifest find-up@^6.3.0
+62 http fetch GET 200 https://registry.npmjs.org/find-up 58ms (cache miss)
+63 timing idealTree:node_modules/find-cache-dir Completed in 61ms
+64 silly fetch manifest babel-loader@^8.2.3
+65 silly fetch manifest @babel/core@^7.16.0
+66 silly fetch manifest webpack@^5.64.4
+67 http fetch GET 200 https://registry.npmjs.org/webpack 1971ms (cache miss)
+68 silly fetch manifest webpack@>=2
+69 http fetch GET 200 https://registry.npmjs.org/webpack 2969ms (cache miss)
+70 silly placeDep node_modules/react-scripts babel-loader@8.3.0 OK for: react-scripts@5.0.1 want: ^8.2.3
+71 silly fetch manifest find-cache-dir@^3.3.1
+72 silly fetch manifest make-dir@^3.1.0
+73 silly fetch manifest schema-utils@^2.6.5
+74 http fetch GET 200 https://registry.npmjs.org/make-dir 656ms (cache miss)
+75 http fetch GET 200 https://registry.npmjs.org/schema-utils 972ms (cache miss)
+76 timing idealTree:node_modules/react-scripts Completed in 5924ms
+77 timing idealTree:node_modules/babel-loader/node_modules/schema-utils Completed in 0ms
+78 silly placeDep node_modules/find-cache-dir find-up@6.3.0 OK for: pkg-dir@7.0.0 want: ^6.3.0
+79 silly fetch manifest locate-path@^7.1.0
+80 silly fetch manifest path-exists@^5.0.0
+81 http fetch GET 200 https://registry.npmjs.org/path-exists 1134ms (cache miss)
+82 http fetch GET 200 https://registry.npmjs.org/locate-path 1865ms (cache miss)
+83 timing idealTree:node_modules/find-cache-dir/node_modules/pkg-dir Completed in 1870ms
+84 silly placeDep node_modules/find-cache-dir locate-path@7.2.0 OK for: find-up@6.3.0 want: ^7.1.0
+85 silly fetch manifest p-locate@^6.0.0
+86 silly placeDep node_modules/find-cache-dir/node_modules/find-up path-exists@ OK for: find-up@6.3.0 want: ^5.0.0
+87 http fetch GET 200 https://registry.npmjs.org/p-locate 80ms (cache miss)
+88 timing idealTree:node_modules/find-cache-dir/node_modules/find-up Completed in 83ms
+89 silly placeDep node_modules/find-cache-dir/node_modules/locate-path p-locate@ OK for: locate-path@7.2.0 want: ^6.0.0
+90 timing idealTree:node_modules/find-cache-dir/node_modules/locate-path Completed in 1ms
+91 silly placeDep node_modules/react-scripts find-cache-dir@3.3.2 OK for: babel-loader@8.3.0 want: ^3.3.1
+92 silly fetch manifest commondir@^1.0.1
+93 silly fetch manifest make-dir@^3.0.2
+94 silly placeDep node_modules/react-scripts/node_modules/babel-loader make-dir@ OK for: babel-loader@8.3.0 want: ^3.1.0
+95 silly placeDep node_modules/react-scripts/node_modules/babel-loader schema-utils@ OK for: babel-loader@8.3.0 want: ^2.6.5
+96 http fetch GET 200 https://registry.npmjs.org/commondir 78ms (cache miss)
+97 http fetch GET 200 https://registry.npmjs.org/make-dir 87ms (cache miss)
+98 timing idealTree:node_modules/react-scripts/node_modules/babel-loader Completed in 90ms
+99 silly placeDep node_modules/react-scripts/node_modules/find-cache-dir commondir@ OK for: find-cache-dir@3.3.2 want: ^1.0.1
+100 silly placeDep node_modules/react-scripts/node_modules/find-cache-dir make-dir@ OK for: find-cache-dir@3.3.2 want: ^3.0.2
+101 timing idealTree:node_modules/react-scripts/node_modules/find-cache-dir Completed in 2ms
+102 timing idealTree:node_modules/find-cache-dir/node_modules/find-up/node_modules/path-exists Completed in 0ms
+103 timing idealTree:node_modules/find-cache-dir/node_modules/locate-path/node_modules/p-locate Completed in 0ms
+104 timing idealTree:node_modules/react-scripts/node_modules/babel-loader/node_modules/make-dir Completed in 0ms
+105 timing idealTree:node_modules/react-scripts/node_modules/babel-loader/node_modules/schema-utils Completed in 0ms
+106 timing idealTree:node_modules/react-scripts/node_modules/find-cache-dir/node_modules/commondir Completed in 0ms
+107 timing idealTree:node_modules/react-scripts/node_modules/find-cache-dir/node_modules/make-dir Completed in 1ms
+108 timing idealTree:buildDeps Completed in 14448ms
+109 timing idealTree:fixDepFlags Completed in 18ms
+110 timing idealTree Completed in 15582ms
+111 timing command:install Completed in 15593ms
+112 verbose type system
+113 verbose stack FetchError: Invalid response body while trying to fetch https://registry.npmjs.org/schema-utils: EACCES: permission denied, mkdir '/Users/macbookpro/Downloads/inventory-project-main/Frontend/.npm-cache/_cacache/index-v5/ec/39'
+113 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/minipass-fetch/lib/body.js:170:15
+113 verbose stack     at async Response.json (/usr/local/lib/node_modules/npm/node_modules/minipass-fetch/lib/body.js:75:17)
+113 verbose stack     at async RegistryFetcher.packument (/usr/local/lib/node_modules/npm/node_modules/pacote/lib/registry.js:94:25)
+113 verbose stack     at async RegistryFetcher.manifest (/usr/local/lib/node_modules/npm/node_modules/pacote/lib/registry.js:118:23)
+113 verbose stack     at async Promise.all (index 1)
+113 verbose stack     at async #buildDepStep (/usr/local/lib/node_modules/npm/node_modules/@npmcli/arborist/lib/arborist/build-ideal-tree.js:1034:5)
+113 verbose stack     at async Arborist.buildIdealTree (/usr/local/lib/node_modules/npm/node_modules/@npmcli/arborist/lib/arborist/build-ideal-tree.js:196:7)
+113 verbose stack     at async Promise.all (index 1)
+113 verbose stack     at async Arborist.reify (/usr/local/lib/node_modules/npm/node_modules/@npmcli/arborist/lib/arborist/reify.js:159:5)
+113 verbose stack     at async Install.exec (/usr/local/lib/node_modules/npm/lib/commands/install.js:152:5)
+114 verbose cwd /Users/macbookpro/Downloads/inventory-project-main/Frontend
+115 verbose Darwin 21.6.0
+116 verbose node v20.9.0
+117 verbose npm  v10.2.4
+118 error code EACCES
+119 error syscall mkdir
+120 error path /Users/macbookpro/Downloads/inventory-project-main/Frontend/.npm-cache/_cacache/index-v5/ec/39
+121 error errno EACCES
+122 verbose FetchError: Invalid response body while trying to fetch https://registry.npmjs.org/schema-utils: EACCES: permission denied, mkdir '/Users/macbookpro/Downloads/inventory-project-main/Frontend/.npm-cache/_cacache/index-v5/ec/39'
+    at /usr/local/lib/node_modules/npm/node_modules/minipass-fetch/lib/body.js:170:15
+    at async Response.json (/usr/local/lib/node_modules/npm/node_modules/minipass-fetch/lib/body.js:75:17)
+    at async RegistryFetcher.packument (/usr/local/lib/node_modules/npm/node_modules/pacote/lib/registry.js:94:25)
+    at async RegistryFetcher.manifest (/usr/local/lib/node_modules/npm/node_modules/pacote/lib/registry.js:118:23)
+    at async Promise.all (index 1)
+    at async #buildDepStep (/usr/local/lib/node_modules/npm/node_modules/@npmcli/arborist/lib/arborist/build-ideal-tree.js:1034:5)
+    at async Arborist.buildIdealTree (/usr/local/lib/node_modules/npm/node_modules/@npmcli/arborist/lib/arborist/build-ideal-tree.js:196:7)
+    at async Promise.all (index 1)
+    at async Arborist.reify (/usr/local/lib/node_modules/npm/node_modules/@npmcli/arborist/lib/arborist/reify.js:159:5)
+    at async Install.exec (/usr/local/lib/node_modules/npm/lib/commands/install.js:152:5)
+123 error
+123 error Your cache folder contains root-owned files, due to a bug in
+123 error previous versions of npm which has since been addressed.
+123 error
+123 error To permanently fix this problem, please run:
+123 error   sudo chown -R 501:20 "/Users/macbookpro/Downloads/inventory-project-main/Frontend/.npm-cache"
+124 verbose exit 1
+125 timing npm Completed in 16157ms
+126 verbose unfinished npm timer reify 1701736039000
+127 verbose unfinished npm timer reify:loadTrees 1701736039007
+128 verbose code 1
+129 error A complete log of this run can be found in: /Users/macbookpro/Downloads/inventory-project-main/Frontend/.npm-cache/_logs/2023-12-05T00_27_18_438Z-debug-0.log
