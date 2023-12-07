@@ -10,7 +10,7 @@ const LogActivity = () => {
     const [historys, setHistorys] = useState([]);
     const [currentPage, setCurrentPage] = useState(1);
     const [searchTerm, setSearchTerm] = useState('');
-
+    // eslint-disable-next-line no-unused-vars
     const isStaff = jwtDecode(localStorage.getItem('token')).data.role === 'Staff';
 
     useEffect(() => {

@@ -5,10 +5,9 @@ import Footer from './Footer';
 import '../style/index.css'
 import dashboardImg from '../assest/ps1.jpg';
 import { Link } from 'react-router-dom';
-import { jwtDecode } from 'jwt-decode';
 
 const Dashboard = () => {
-  const [searchTerm, setSearchTerm] = useState('');
+  const [searchTerm] = useState('');
   const [inventoryData, setInventoryData] = useState([]);
 
   useEffect(() => {
@@ -21,7 +20,7 @@ const Dashboard = () => {
         console.error('Error fetching inventory data:', error);
       });
   }, []);
-
+  // eslint-disable-next-line no-unused-vars
   const filteredInventory = inventoryData.filter((item) => {
     const includesSearchTerm = item.name.toLowerCase().includes(searchTerm.toLowerCase());
     console.log(`Item: ${item.name}, Search Term: ${searchTerm}, Result: ${includesSearchTerm}`);

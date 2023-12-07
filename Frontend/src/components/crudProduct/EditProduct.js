@@ -12,7 +12,7 @@ const EditProduct = () => {
   const [productData, setProductData] = useState("");
   const [keterangan, setKeterangan] = useState("");
   const [log, setLog] = useState("");
-  const [msg, setMsg] = useState('');
+  const [setMsg] = useState('');
   const [submitted, setSubmitted] = useState(false);
   const navigate = useNavigate();
   const { id } = useParams();
@@ -20,7 +20,7 @@ const EditProduct = () => {
   useEffect(() => {
     getProductById();
   }, []);
-  
+  // eslint-disable-next-line no-unused-vars
   const isStaff = jwtDecode(localStorage.getItem('token')).data.role === 'Staff';
 
   const handleEdit = async (e) => {

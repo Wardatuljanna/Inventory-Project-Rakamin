@@ -1,6 +1,6 @@
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
-import { useState } from 'react';
+import React, { useState } from 'react';
 import Swal from 'sweetalert2';
 import Navbar from '../Navbar';
 import { MdError } from 'react-icons/md';
@@ -11,7 +11,7 @@ const AddProduct = () => {
   const [productName, setProductName] = useState("");
   const [keterangan, setketerangan] = useState("");
   const [qty, setQty] = useState("");
-  const [errorMessage, setErrorMessage] = useState("");
+  const [errorMessage] = useState("");
   const [submitted, setSubmitted] = useState(false); // Track whether the form is submitted
   const navigate = useNavigate();
 
@@ -28,7 +28,7 @@ const AddProduct = () => {
         console.error("Token is missing or invalid");
         return;
       }
-
+      // eslint-disable-next-line no-unused-vars
       const response = await axios.post(
         "http://localhost:5000/products",
         {

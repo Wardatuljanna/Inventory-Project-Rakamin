@@ -8,8 +8,6 @@ import AddProduct from './components/crudProduct/AddProduct';
 import DetailProduct from './components/crudProduct/DetailProduct';
 import LogActivity from './components/crudProduct/LogActivity';
 import EditProduct from './components/crudProduct/EditProduct';
-import ReactPlayer from 'react-player';
-import { FaPlay, FaPause } from 'react-icons/fa';
 
 import backgroundSound from './assest/gta.mp3';
 
@@ -32,7 +30,7 @@ function App() {
       audio.currentTime = 0;
     };
   }, [isPlaying]);
-
+  // eslint-disable-next-line no-unused-vars
   const handlePlayPause = () => {
     setIsPlaying(!isPlaying);
   };

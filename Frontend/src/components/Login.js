@@ -116,10 +116,10 @@ const Login = () => {
                             </div>
                             {submitted && !password && <p className="text-red-500">Password is required</p>}
                         </div>
-                        {msg && <p role="alert" className="text-black text-sm alert alert-warning  py-5 my-5"> <MdError /> {msg}</p>}
+                        {msg && <p role="alert" className="text-black text-sm alert alert-warning  py-5 my-5"> <MdError /> {msg}&apos;</p>}
                         <button className="w-full my-2 py-4 bg-[#000] text-white font-semibold rounded-[30px]">Sign In</button>
                         <span className="my-2 text-grey-500 text-xs">
-                            Don't have an account ?  
+                            Don&apos;t have an account ?  
                             <button className="my-2 pl-1 text-grey-500 hover:text-black text-xs" onClick={navigateToRegister}>Sign Up</button>
                         </span>
                     </form>

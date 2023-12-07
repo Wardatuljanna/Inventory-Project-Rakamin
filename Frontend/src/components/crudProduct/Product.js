@@ -1,18 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import Navbar from '../Navbar';
-import { Link, Navigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { jwtDecode } from 'jwt-decode';
 import '../../style/index.css';
 import Swal from 'sweetalert2';
-import { FaEarlybirds, FaEdit, FaInfo, FaNewspaper, FaTrash } from 'react-icons/fa';
+import { FaEdit, FaNewspaper, FaTrash } from 'react-icons/fa';
 import { IoScan } from "react-icons/io5";
 import QRCode from 'qrcode';
-
-
-
-
-
 
 const itemsPerPage = 8;
 
@@ -154,7 +149,7 @@ const Product = () => {
         (currentPage - 1) * itemsPerPage,
         currentPage * itemsPerPage
     );
-
+    // eslint-disable-next-line no-unused-vars
     const printQRCode = (qrCodeData) => {
         const qrCodeContainer = document.createElement('div');
         QRCode.toCanvas(qrCodeContainer, qrCodeData);
