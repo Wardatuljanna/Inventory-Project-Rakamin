@@ -11,7 +11,7 @@ const Dashboard = () => {
   const [inventoryData, setInventoryData] = useState([]);
 
   useEffect(() => {
-    axios.get('http://backend-inventory-project-production.up.railway.app/products')
+    axios.get('https://backend-inventory-project-production.up.railway.app/products')
       .then(response => {
         console.log('Data from API:', response.data);
         setInventoryData(response.data);
