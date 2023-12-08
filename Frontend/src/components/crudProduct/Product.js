@@ -32,7 +32,7 @@ const Product = () => {
                 return;
             }
 
-            const response = await axios.get('http://backend-inventory-project-production.up.railway.app/products', {
+            const response = await axios.get('https://backend-inventory-project-production.up.railway.app/products', {
                 headers: {
                     Authorization: `Bearer ${token}`,
                 },
@@ -91,7 +91,7 @@ const Product = () => {
             });
 
             if (result.isConfirmed) {
-                await axios.delete(`http://backend-inventory-project-production.up.railway.app/products/${id}`, {
+                await axios.delete(`https://backend-inventory-project-production.up.railway.app/products/${id}`, {
                     headers: {
                         Authorization: `Bearer ${token}`,
                     },
