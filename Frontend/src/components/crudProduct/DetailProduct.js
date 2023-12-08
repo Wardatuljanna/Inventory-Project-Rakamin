@@ -18,7 +18,7 @@ const DetailProduct = () => {
                 return;
             }
 
-            const response = await axios.get("http://backend-inventory-project-production.up.railway.app/products/", {
+            const response = await axios.get("https://backend-inventory-project-production.up.railway.app/products/", {
                 headers: {
                     Authorization: `Bearer ${token}`,
                 },
@@ -32,7 +32,7 @@ const DetailProduct = () => {
 
     const deleteProduct = async (id) => {
         try {
-            await axios.delete(`http://backend-inventory-project-production.up.railway.app/products/${id}`);
+            await axios.delete(`https://backend-inventory-project-production.up.railway.app/products/${id}`);
             setProducts(prevProducts => prevProducts.filter(product => product.id !== id));
         } catch (error) {
             console.log(error);
