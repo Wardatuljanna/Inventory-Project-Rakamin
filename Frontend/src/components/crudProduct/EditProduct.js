@@ -35,7 +35,7 @@ const EditProduct = () => {
       }
   
       await axios.put(
-        `http://localhost:5000/products/${id}`,
+        `http://backend-inventory-project-production.up.railway.app/products/${id}`,
         {
           versionId: version,
           productName: product,
@@ -67,7 +67,7 @@ const EditProduct = () => {
     try {
       const token = localStorage.getItem("token");
       const response = await axios.get(
-        `http://localhost:5000/products/${id}`,
+        `http://backend-inventory-project-production.up.railway.app/products/${id}`,
         {
           headers: {
             Authorization: `Bearer ${token}`,

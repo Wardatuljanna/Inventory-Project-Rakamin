@@ -24,7 +24,7 @@ const Register = () => {
 
     try {
         // Continue with registration
-        const registrationResponse = await axios.post('http://localhost:5000/auth/register', {
+        const registrationResponse = await axios.post('http://backend-inventory-project-production.up.railway.app/auth/register', {
             name: name,
             role: role,
             email: email,

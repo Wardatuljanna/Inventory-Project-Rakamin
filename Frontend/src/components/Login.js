@@ -20,7 +20,7 @@ const Login = () => {
         setSubmitted(true);
 
         try {
-            const response = await axios.post('http://localhost:5000/auth/login', {
+            const response = await axios.post('http://backend-inventory-project-production.up.railway.app/auth/login', {
                 email: email,
                 password: password
             });
