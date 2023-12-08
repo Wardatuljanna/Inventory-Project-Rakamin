@@ -25,7 +25,7 @@ const LogActivity = () => {
                 return;
             }
 
-            const response = await axios.get('http://backend-inventory-project-production.up.railway.app/logs', {
+            const response = await axios.get('https://backend-inventory-project-production.up.railway.app/logs', {
                 headers: {
                     Authorization: `Bearer ${token}`,
                 },
