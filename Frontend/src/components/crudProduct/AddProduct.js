@@ -30,7 +30,7 @@ const AddProduct = () => {
       }
       // eslint-disable-next-line no-unused-vars
       const response = await axios.post(
-        "http://backend-inventory-project-production.up.railway.app/products",
+        "https://backend-inventory-project-production.up.railway.app/products",
         {
           versionId: versionId,
           productName: productName,
